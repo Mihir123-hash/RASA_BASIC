@@ -1,0 +1,24 @@
+version: "3.1"
+
+intents:
+  - greet
+  - program_details
+  - scholarship_details
+  - fallback
+
+responses:
+  utter_greet:
+    - text: "Welcome to Toronto Metropolitan University's Psychology program information service. How can I assist you today?"
+
+  utter_program_details:
+    - text: "The Psychology program at Toronto Metropolitan University offers both Psychological Science and Clinical Psychology tracks. It is a full-time, on-campus program with a duration of 48 months starting from September 5, 2025. The yearly tuition fees are 25,359 CAD. You can find more information [here](https://www.torontomu.ca/graduate/programs/psychology/)."
+
+  utter_scholarship_details:
+    - text: "Toronto Metropolitan University offers the Dr. C. Ravi and Shanti Ravindran Award for Outstanding Doctoral Thesis. It's a merit-based scholarship providing 2500 CAD. Unfortunately, the deadline is not specified. You can find more information [here](https://www.phdportal.com/scholarships/2694/the-dr-c-ravi-and-shanti-ravindran-award-for-outstanding-doctoral-thesis.html)."
+
+  utter_fallback:
+    - text: "I'm sorry, I didn't quite understand that. Could you please rephrase your question?"
+
+actions:
+  - action_program_details
+  - action_scholarship_details

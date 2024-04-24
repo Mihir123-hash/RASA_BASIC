@@ -1,0 +1,28 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hello
+    - hi
+    - hey there
+
+- intent: program_details
+  examples: |
+    - Tell me about the Psychology program
+    - What are the details of the Psychology program?
+    - Can you provide information about the Psychology course?
+
+- intent: scholarship_details
+  examples: |
+    - What scholarships are available?
+    - Tell me about the scholarships offered by the university
+    - Scholarship details
+
+- intent: fallback
+  examples: |
+    - Can you repeat that?
+    - I didn't understand
+    - Please rephrase
+
+  

@@ -1,0 +1,25 @@
+version: "3.1"
+
+stories:
+  - story: User asks about the Psychology program
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: program_details
+      - action: action_program_details
+      - action: utter_program_details
+
+  - story: User asks about scholarships
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: scholarship_details
+      - action: action_scholarship_details
+      - action: utter_scholarship_details
+
+  - story: User asks a fallback question
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: fallback
+      - action: utter_fallback
